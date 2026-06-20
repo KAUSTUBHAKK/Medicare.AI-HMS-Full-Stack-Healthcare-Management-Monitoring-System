@@ -3,7 +3,6 @@
 Full-stack AI-assisted healthcare management platform with patient, doctor, and admin workflows.
 
 ## Structure
-
 ```text
 MedicareAI-GitHub/
 ├── frontend/
@@ -15,14 +14,12 @@ MedicareAI-GitHub/
 ```
 
 ## Tech Stack
-
 - React, JavaScript, HTML, CSS
 - Node.js, Express.js, MongoDB Atlas, Mongoose, JWT
 - Python, FastAPI, Uvicorn
 - TensorFlow.js, Tesseract.js, Socket.IO, jsPDF
 
 ## Main Features
-
 - Patient, doctor, and admin login
 - Appointment booking
 - AI health chat
@@ -61,19 +58,50 @@ MedicareAI-GitHub/
 ### Hindi Language Dashboard
 ![Hindi Language Dashboard](github-screenshots/08-hindi-language-dashboard.jpg)
 
+## Getting Started
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### Backend
+```bash
+cd backend
+npm install
+npm start
+```
+
+### AI Service
+```bash
+cd ai-service
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
 ## Environment
-
-Real .env files are not included. Use:
-
+Real `.env` files are not included. Use:
 ```text
 backend/.env.example
 ai-service/.env.example
 ```
 
 ## Demo Logins
-
 ```text
 Patient: patient@demo.com / demo1234
 Doctor: doctor@demo.com / demo1234
 Admin: admin@demo.com / demo1234
 ```
+
+## Status
+Currently runs locally. Live deployment not yet set up.
+
+## Author
+Kaustubha — BE Computer Engineering, AISSMS IOIT, Pune
+
+## License
+MIT
